@@ -1,0 +1,3 @@
+_id,name,fatherName,grandFatherName,gender,dateOfBirth,dayOfBirth,monthOfBirth,yearOfBirth,age,address,phoneNumber,history,__v
+5fae41ff9c599a6469a876d2,Patietn,One,First,M,12,Sunday,04,1997,23,ASTU,123456,[],0
+5fc623ea0604e532ceec0949,Lioul,Behailu,Desta,M,20/04/1997,Sunday,April,1997,23,Adama,0931635377,[],0
