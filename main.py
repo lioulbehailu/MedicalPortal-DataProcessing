@@ -6,7 +6,7 @@ from pprint import pprint
 import schedule
 import time
 
-import DataProcessing
+import DataStoring
 
 client = MongoClient()
 db = client.MedicalPortal
@@ -26,8 +26,9 @@ isFetching = scheduleData['isFetching']
 
 def job():
     if not isFetching:
-        result = DataProcessing.ProcessData()
-        # print(len(result),result)
+        result = DataStoring.StoreData()
+        if result:
+            print('Data Processing Done')
 
 schedule.every().second.do(job)
 # schedule.every(1).minutes.do(job)
