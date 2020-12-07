@@ -26,6 +26,7 @@ isFetching = scheduleData['isFetching']
 
 def job():
     if not isFetching:
+        # print('True')
         result = DataStoring.StoreData()
         if result:
             print('Data Processing Done')
